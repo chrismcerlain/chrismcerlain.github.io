@@ -1,0 +1,675 @@
+/* EVERY PAGE CSS */
+/* Font Declaration */
+@font-face{ font-family: Montserrat;
+src: url(Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family:MontBold;
+    src: url(Montserrat/Montserrat-Bold.ttf)
+}
+@font-face{
+    font-family: montsmalbold;
+    src: url(Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face{
+    font-family:MontItalic; src:url(Montserrat/Montserrat-Italic.ttf);
+}
+.textstyle{
+    color:rgb(205, 105, 155);
+}
+
+/* Mobile Dev Spot */
+@media screen {
+  body {
+    width: 100%;
+  }
+}
+
+@media print {
+  body {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+    .nav a, .nav-right{
+        float: none;
+        display: inline-block;
+    }
+    .nav-centered a {
+        display: none;
+    }
+    #aboutimg{
+        opacity: 0;
+    }
+    .ATextbox{
+        text-align: center;
+    }
+    .imageboxd{
+        transform: scale(0.5, 0.5);
+    }
+
+}
+
+/* Full Page Declaration */
+html{
+    background-color:rgb(21, 177, 99, 30%);
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
+    height: 100%
+    overflow-y:hidden; 
+    
+}
+
+body{
+    width: 100%;
+    margin: auto;
+     -webkit-font-smoothing: antialiased;
+}
+
+/* Header Style */
+header{
+    top: 1px;
+    background-color: background-color:rgb(21, 177, 99);
+    z-index: 10;
+    margin: auto;
+    width:100%;
+    
+    
+}
+
+/* Nav Bar Style */
+.nav{
+    z-index: inherit;
+    position: sticky;
+    color: #333030;
+    font-family: "Montserrat"; 
+    font-size: 15px; 
+    overflow: hidden;
+    background-color: background-color:rgb(21, 177, 99, 30%);
+    padding: 15px;
+    border: 1px #333030;
+        border-top-color: #333030;
+        border-top-style: solid;
+        border-top-width: 3px;
+        border-right-color: #333030;
+        border-right-style: solid;
+        border-right-width: 3px;
+        border-bottom-color: #333030;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-left-color:#333030;
+        border-left-style: solid;
+        border-left-width: 3px;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+    
+}
+.nav a{
+    float:;
+    color:inherit;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-centered a{
+    color:#333030;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav-right{
+    float:right;
+  
+}
+
+/*Hover and Visited Properties of Nav Bar */
+.nav a:active {
+    background-color: transparent;
+    color:black;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+.nav-centered a:hover{
+    color:#FF4949;
+    text-decoration: none;
+}
+
+/* Vertical Text */
+aside{
+    position: absolute;
+    right: 0px;
+    width: 35px;
+    z-index: 1;
+    margin: auto;
+}
+
+
+.CM1{
+    font-family: Montserrat;
+    font-size: 13.5px;
+    margin: auto;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 150px;
+}
+.c1{
+    width: 200px;
+    position: absolute;
+}
+
+.c2{
+    width: 50px;
+    left: 300px;
+    position: absolute;
+}
+
+/* Footer */
+footer{
+    font-family: Montserrat;
+    text-align: center;
+    margin:auto;
+}
+
+.social{
+    opacity: 80%;
+    
+}
+
+/* INDEX ONLY CSS */
+
+/* Home Image Styling */
+.imgboxd{
+    width:100%;
+    height: auto;
+    margin: auto;
+}
+.imageOne{
+    transform:translate(90px,100px);
+   max-width:100%;
+   height: auto;
+    padding:none;
+    border:none;
+    box-decoration-break: none;
+    box-shadow:-10px 10px rgb(30, 33, 32, 65%);
+    margin: 0 auto;
+    border-radius:2px;
+    
+}
+.imageTwo{
+    transform:translate(-414px,100px);
+    position: absolute;
+   max-width:100%;
+   height: auto;
+    padding:none;
+    border:none;
+    box-decoration-break: none;
+    box-shadow:-10px 10px rgb(30, 33, 32, 65%);
+    margin: 0 auto;
+    border-radius:2px;
+    opacity: 0;
+}
+
+/* Home Image Hover Properties */
+.imageOne:hover{
+    opacity: 0;
+}
+
+.imageTwo:hover{
+    opacity:100;
+}
+/* Text related to the Home Image */
+.imagetext{
+    max-width: 100%;
+    max-height: 100%;
+    font-family: MontBold; 
+    font-size: 15px; 
+    font-style:normal;
+    position: relative;
+    font-size: 72px;
+    line-height: 5px;
+    color: transparent; transform:translate(370px, -160px);
+    -webkit-text-stroke: 3.5px black;
+    text-decoration: none;
+}
+.imagetext a{
+    text-decoration-color: transparent;
+    text-decoration: none;
+}
+/* Text related to the Home Image Hover and Visited Properties */
+.imagetext a:link{
+    color:transparent;
+}
+.imagetext a:visited{
+    color: transparent;
+    -webkit-text-stroke: 3.5px black;
+
+}
+
+.imagetext a:hover{
+    color:black;
+    background-color:transparent;
+}
+
+/* Caption for Text related to the Home Image */
+.uimtext{
+    font-family: Montserrat;
+    font-size:30px;
+    position:absolute;
+    margin: none;
+    transform:translate(720px, -210px);
+    
+}
+.hr1{
+    width: 290px;
+    border:2.2px solid black;
+    border-radius: 23;
+    transform: translate(-300px, 4px);
+    position: absolute
+}
+
+
+/* PROJECTS CSS ONLY */
+
+/* Animations */
+@keyframes conceal{
+    from{opacity: 0}
+    to{opacity: 100}
+}
+@keyframes shower{
+    from{opacity: 100}
+    to{opacity: 0}
+}
+
+/* Film Headings */
+.projhead1{
+    font-family: Montbold;
+    font-size: 42px;
+    color:transparent;
+    -webkit-text-stroke: 3.5px black;
+
+}
+.projhead2{
+    font-family: Montsmalbold;
+    font-size: 22px;
+    color:black;
+    text-align: center;
+    padding: 1px;
+    margin: 1px;
+
+}
+
+/* Film Caption */
+.phcap{
+    font-family: MontItalic;
+    padding: none;
+    font-size: 16px;
+    text-align: center
+}
+
+/* Cold Winter Nights Images General*/
+.gallery{
+    width:100%;
+    height: auto;
+    min-width: 500px;
+    margin: auto;
+}
+.films{
+    margin:20px;
+    margin-right: 40px;
+    margin-top: 5px;
+    padding-top: 0px;
+    background-color:rgb( 51, 48, 48, 35%);
+}
+
+/*Cold Winter Nights Poster*/
+.CWNPoster{ 
+    padding:14px;
+    animation-name: conceal;
+    animation-duration: 1s;
+    z-index: 1;
+}
+.CWNvertpost{
+    z-index: 1;
+    transform: translate(-4px, -293px);
+    position:relative;
+    animation-name: conceal;
+    animation-duration: 1s;
+}
+/* Cold Winter Nights Text */
+
+.CWNText{
+    font-size: 18px;
+    font-family: Montserrat;
+    position: absolute;
+    width: 380px;
+    text-align: center;
+    z-index: -1;
+    
+    
+}
+#CWMhead{
+    font-family: MontBold;
+    transform: translate(34px, -540px);
+    position: absolute;
+    width:400px;
+    color: transparent;
+    font-size: 35px;
+    -webkit-text-stroke: 1.3px black;
+}
+#CWcap{
+   transform: translate(44px, -450px);
+    position: absolute;
+ 
+}
+#CWT{
+    position: absolute;
+    transform: translate(44px,-400px);
+}
+
+/* Cold Winter Nights Poster Hover */
+.CWNPoster:hover{
+    opacity: 0;
+    animation-name:shower;
+    animation-duration: .24s;
+}
+/*Currently Not in Use*/
+/*.CWNvertpost:hover{
+    opacity: 0;
+    animation-name: shower;
+    animation-duration: .25s;
+}*/
+
+/* Cold Winter Nights Images Specific */
+
+.CWN1{
+    transform: translate(-472px, 0px);
+    margin:none;
+    padding:14px;
+    position: relative;
+    
+}
+.CWN2{
+    position: absolute;
+    padding: 14px;
+    transform: translate(-487px,0);
+    
+}
+.CWN3 {
+    position: absolute;
+    padding: 14px;
+    transform: translate(-487px, 280px)
+    
+}
+.hr2{
+    border:2.2px solid black;
+    border-radius: 23;
+    padding: 2px;
+    margin-bottom:15px; 
+    
+}
+
+/* Ridley Park Images General */
+.films2{
+    margin:20px;
+    margin-top:5px;
+    margin-right: 40px;
+    padding-top: 0px;
+    background-color:rgb( 51, 48, 48, 35%);
+    overflow-y: hidden;
+}
+
+/* Ridley Park Poster */
+.RPoster{
+    padding:14px;
+    animation-name: conceal;
+    animation-duration: 1s;
+    z-index: 0;
+}
+.RPvert{
+    transform: translate(-18px, -281px);
+    padding: 14px;
+    position: relative;
+    animation-name: conceal;
+    animation-duration: 1s;
+    z-index: 10;
+}
+
+/* Ridley Park Poster Hover */
+.RPoster:hover{
+    opacity: 0;
+    animation-name: shower;
+    animation-duration: .25s;
+    
+}
+/*Currently Not in Use*/
+/*.RPvert:hover{
+    opacity: 0;
+    animation-name: shower;
+    animation-duration: .25s;
+    
+}*/
+
+/* Ridley Park related Text */
+.RPText{
+    font-size: 18px;
+    font-family: Montserrat;
+    position: absolute;
+    width: 380px;
+    text-align: center;
+    z-index: -1;
+    
+    
+}
+#RPhead{
+    font-family: MontBold;
+    transform: translate(34px, -540px);
+    position: absolute;
+    width:400px;
+    color: transparent;
+    font-size: 35px;
+    -webkit-text-stroke: 1.3px black;
+}
+#RPcap{
+   transform: translate(44px, -450px);
+    position: absolute;
+ 
+}
+#RPT{
+    position: absolute;
+    transform: translate(44px,-400px);
+}
+
+/* Ridley Park Images Specific */
+.RP1{
+    margin:none;
+    padding:14px;
+    position: absolute;
+    transform: translate(-32px, -1px); 
+    
+}
+.RP2{
+    position: absolute;
+    padding: 14px;
+  transform: translate(-497px,280px);
+    
+}
+.RP3 {
+    position: absolute;
+    padding: 14px;
+    transform: translate(-33px, 280px);
+    
+}
+
+/* Ridley Park Video (currently not in use)*/
+/*.RP{
+    position: absolute;
+    transform: translate(448px, -566px);
+    padding: none;
+    z-index: -1;
+    
+}*/
+
+/* Music General */
+.music{
+    margin:20px;
+    background-color:rgb( 51, 48, 48, 35%);
+    bottom:400px;
+    
+}
+/* Identity Crisis Section */
+.ICover{
+    position: relative;
+    padding: 14px;
+}
+.MTitle{ 
+    display: inline;
+    font-family: Montsmalbold;
+    position:absolute;
+    
+}
+.Mdescript{
+    display: inline-block;
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 14px;
+    max-width: 1000px;
+    bottom: 240px;
+    
+}
+.ICicons{
+    position:absolute;
+    left:265px;
+    bottom:160px;
+}
+.icons2{
+    padding:13px;
+}
+
+/* ABOUT ONLY CSS */
+/* About Image */
+.imgblock{
+    width:100%;
+    margin: auto;
+}
+.imageaboutOne{
+    transform:translate(90px,100px);
+    max-width:100%;
+    height: auto;
+    padding:none;
+    border:none;
+    box-decoration-break: none;
+    box-shadow:-10px 10px rgb(30, 33, 32, 65%);
+    margin: 0 auto;
+    border-radius:2px;
+}
+
+/* About image text */
+.aboutimagetext{
+    max-width: 100%;
+    max-height: 100%;
+    font-family: MontBold; 
+    font-size: 15px; 
+    font-style:normal;
+    position: relative;
+    font-size: 72px;
+    line-height: 5px;
+    color: transparent; 
+    -webkit-text-stroke: 4px black;
+    transform:translate(450px, -200px);
+    text-decoration: none;
+    
+}
+/* About text */
+.ATextbox{
+    display: inline;
+    position: absolute;
+   bottom: 240px;
+    right: 100px;
+}
+.AboutText{
+    font-family: Montsmalbold;
+    font-size: 27px;
+    max-width: 550px;
+    text-align: right;
+   
+    
+   
+}
+/* About Custom Nav */
+.header2{
+    top: 1px;
+    position: sticky;
+    background-color: rgb(21, 177, 99, 12%);
+    z-index: 10;
+    
+}
+
+/* CONTACT ONLY CSS */
+
+/* Contact header */
+
+.ctctHead1{
+    position: relative;
+    bottom: 379px;
+    left: 588px;
+     font-family: Montbold;
+    font-size: 60px;
+    color:transparent;
+    -webkit-text-stroke: 3.2px black;
+    
+    
+}
+.CtctImg{
+    position: relative;
+    left: 790px;
+    top: 100px;
+    box-shadow: 7px 7px rgb(30, 33, 32, 65%)
+    
+}
+.ctcts a{
+     max-width: 100%;
+    max-height: 100%;
+    font-family: MontBold; 
+    font-size: 15px; 
+    font-style:normal;
+    position: relative;
+    font-size: 50px;
+    line-height: 8px;
+    color: transparent;
+    bottom: 300px;
+    left:50px;
+    -webkit-text-stroke: 1.5px rgb(205, 105, 155);
+    text-decoration: none;
+    display: inline;
+    position: relative;
+}
+.ctcts a:link{
+    color:transparent;
+}
+.ctcts a:visited{
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgb(205, 105, 155);
+
+}
+
+.ctcts a:hover{
+    color:rgb(205, 105, 155);
+    background-color:transparent;
+}
+
+.WebContain{
+    width:100%;
+    height: auto;
+    margin: auto;
+}
+
+
