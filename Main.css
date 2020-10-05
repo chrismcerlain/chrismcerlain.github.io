@@ -14,9 +14,7 @@ src: url(Montserrat/Montserrat-Regular.ttf);
 @font-face{
     font-family:MontItalic; src:url(Montserrat/Montserrat-Italic.ttf);
 }
-.textstyle{
-    color:rgb(205, 105, 155);
-}
+
 
 /* Mobile Dev Spot */
 @media screen {
@@ -655,6 +653,104 @@ footer{
     
 }
 /* About text */
+@keyframes aboutmain{
+    0%{opacity: 0%;}
+    60%{
+        opacity: 0%
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+@keyframes aboutplus1{
+    0%{
+        opacity: 0%;
+        -webkit-text-stroke: 1.3px rgb(205, 105, 155);
+       
+        
+    }
+    20%{
+        opacity: 0%;
+        -webkit-text-stroke: 1.3px rgb(205, 105, 155);
+        
+
+    }
+    25%{
+        opacity:100%;
+        -webkit-text-stroke: 1.3px rgb(205, 105, 155);
+        
+    }
+    100%{
+        -webkit-text-stroke: 1.3px transparent;
+    }
+}
+@keyframes aboutplus3{
+    0%{
+        opacity: 0%;
+        -webkit-text-stroke: 1.3px rgb(205, 105, 155);
+       
+        
+    }
+    40%{
+        opacity: 0%;
+        -webkit-text-stroke: 1.3px rgb(205, 105, 155);
+        
+
+    }
+    45%{
+        opacity:100%;
+        -webkit-text-stroke: 1.3px rgb(205, 105, 155);
+        
+    }
+    100%{
+        -webkit-text-stroke: 1.3px transparent;
+        
+    }
+}
+@keyframes aboutplus2{
+    0%{
+        opacity: 0%;
+        -webkit-text-stroke: 1.3px rgb(205, 105, 155);
+       
+        
+    }
+    30%{
+        opacity: 0%;
+        -webkit-text-stroke: 1.3px rgb(205, 105, 155);
+        
+
+    }
+    35%{
+        opacity:100%;
+        -webkit-text-stroke: 1.3px rgb(205, 105, 155);
+        
+    }
+    100%{
+        -webkit-text-stroke: 1.3px transparent;
+        
+    }
+}
+.textstyle1{
+    color:rgb(205, 105, 155);
+    animation: aboutplus1;
+    animation-duration: 3s;
+}
+.textstyle2{
+    color:rgb(205, 105, 155);
+    animation: aboutplus2;
+    animation-duration: 4.2s;
+}
+.textstyle3{
+    color:rgb(205, 105, 155);
+    animation: aboutplus3;
+    animation-duration: 5.4s;
+}
+.bod{
+    animation: aboutmain;
+    animation-duration: 5s;
+
+}
 .ATextbox{
     display: inline;
     position: absolute;
