@@ -32,8 +32,8 @@
             <h1 class="ctctHead1">//CONTACT</h1>
             
             <div class="ctcts">
-                <p><a class="emailHover" href="mailto:cmcerlai4@gmail.com">EMAIL</a></p>
-                <p><a class="linkedinHover" href="https://www.linkedin.com/in/chris-mcerlain">LINKEDIN</a></p>
+                <p><a id = "emailHover" href="mailto:cmcerlai4@gmail.com">EMAIL</a></p>
+                <p><a id ="linkedinHover" href="https://www.linkedin.com/in/chris-mcerlain">LINKEDIN</a></p>
             </div>
         </main>
     
@@ -43,7 +43,11 @@
                     <p>Chris McErlain</p>
                 </div>
                 <div class="c2">
-                    <p>2020</p>
+                    <p id="demo"></p>
+                    <script type ="text/javascript">
+                    var d = new Date();
+                    document.getElementById("demo").innerHTML = ((1 + d.getMonth()) + " / " + (d.getDate()) + " / " + (d.getFullYear()));
+                    </script>
                 </div>
             </div>
         </aside>

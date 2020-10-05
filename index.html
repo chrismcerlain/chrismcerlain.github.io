@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
         <title>Chris McErlain</title>
         
         
@@ -35,14 +36,14 @@
                 <img class="imageTwo" src="Images/IMG_3152.jpg" height="500" width="500">
                     
                 <div class="imagetext">
-                    <p><a href="Projects.html">FILMMAKER</a></p>
-                    <p><a href="Projects.html">MUSIC CREATOR</a></p>
+                    <p id = "film"><a href="Projects.html">FILM</a><a id="filmtit" href="Projects.html">MAKER</a></p>
+                    <p><a href="Projects.html">MUSIC</a><a id="musictit" href="Projects.html"> CREATOR</a></p>
                         
                 </div>
                 
                 <div class="uimtext">
-                    <hr class=hr1>
-                    <caption aria-activedescendant="imagetext">Never stop creating</caption>
+                    <hr class="hr1">
+                    <p class="slide">Never stop creating</p>
                 
                 </div>
             </div>
@@ -55,7 +56,11 @@
                     <p>Chris McErlain</p>
                 </div>
                 <div class="c2">
-                    <p> 2020 </p>
+                    <p id="demo"></p>
+                    <script type ="text/javascript">
+                    var d = new Date();
+                    document.getElementById("demo").innerHTML = ((1 + d.getMonth()) + " / " + (d.getDate()) + " / " + (d.getFullYear()));
+                    </script>
                 </div>
             </div>
         </aside>

@@ -111,7 +111,6 @@ header{
     
 }
 .nav a{
-    float:;
     color:inherit;
     font-size: 17px;
     padding: 14px 16px;
@@ -167,7 +166,7 @@ aside{
 }
 
 .c2{
-    width: 50px;
+    width: 120px;
     left: 300px;
     position: absolute;
 }
@@ -227,6 +226,30 @@ footer{
     opacity:100;
 }
 /* Text related to the Home Image */
+@keyframes Film{
+    0%{
+        opacity: 0%;
+        color: black;
+    }
+    19%{
+        opacity: 0%;
+    }
+    20%{
+        opacity: 100%;
+        color: black;
+    }
+    100%{
+        color: transparent;
+    }
+}
+#musictit{
+    animation: Film;
+    animation-duration: 6s;
+}
+#filmtit{
+    animation: Film;
+    animation-duration: 4s;
+}
 .imagetext{
     max-width: 100%;
     max-height: 100%;
@@ -254,13 +277,51 @@ footer{
 
 }
 
-.imagetext a:hover{
+.creator a:hover{
     color:black;
     background-color:transparent;
 }
 
 /* Caption for Text related to the Home Image */
+@keyframes slide{
+    0%{
+        Opacity: 0%;
+        transform:translate(-400px, 4px)
+    }
+    60%{
+        Opacity: 0%;
+        transform:translate(-400px, 4px)
+    }
+    100%{
+        opacity: 100%;
+        transform: translate(-300px, 4px);
+    }
+
+
+}
+@keyframes slide2{
+    0%{
+        opacity: 0%;
+        
+    }
+    25%{
+        opacity: 0%;
+       
+    }
+    100%{
+        opacity: 100%;
+        
+    }
+}
+.slide{
+    animation: slide2;
+    animation-duration: 4s;
+    transform: translate(0px, -28px);
+
+   
+}
 .uimtext{
+    
     font-family: Montserrat;
     font-size:30px;
     position:absolute;
@@ -269,6 +330,8 @@ footer{
     
 }
 .hr1{
+    animation: slide;
+    animation-duration: 3s;
     width: 290px;
     border:2.2px solid black;
     border-radius: 23;
@@ -525,6 +588,9 @@ footer{
     bottom:400px;
     
 }
+.music2{
+    position: relative;
+}
 /* Identity Crisis Section */
 .ICover{
     position: relative;
@@ -538,17 +604,17 @@ footer{
 }
 .Mdescript{
     display: inline-block;
-    position: absolute;
+    position: relative;
     font-family: Montserrat;
     font-size: 14px;
     max-width: 1000px;
-    bottom: 240px;
+    bottom: 130px;
     
 }
 .ICicons{
-    position:absolute;
+    position: absolute;
     left:265px;
-    bottom:160px;
+    bottom: 430px;
 }
 .icons2{
     padding:13px;
@@ -634,6 +700,30 @@ footer{
     top: 100px;
     box-shadow: 7px 7px rgb(30, 33, 32, 65%)
     
+}
+@keyframes ctct{
+    0%{
+        opacity: 0%;
+        color: rgb(205, 105, 155);
+    }
+    19%{
+        opacity: 0%;
+    }
+    20%{
+        opacity: 100%;
+        color: rgb(205, 105, 155);
+    }
+    100%{
+        color: transparent;
+    }
+}
+#emailHover{
+    animation: ctct;
+    animation-duration: 4s;
+}
+#linkedinHover{
+    animation: ctct;
+    animation-duration: 6s;
 }
 .ctcts a{
      max-width: 100%;
