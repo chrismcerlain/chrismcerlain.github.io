@@ -20,6 +20,7 @@ src: url(Montserrat/Montserrat-Regular.ttf);
 @media screen {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 }
 
@@ -29,48 +30,43 @@ src: url(Montserrat/Montserrat-Regular.ttf);
   }
 }
 @media screen and (max-width: 600px) {
-    .nav a, .nav-right{
-        float: none;
-        display: inline-block;
-    }
-    .nav-centered a {
-        display: none;
-    }
     #aboutimg{
         opacity: 0;
     }
     .ATextbox{
-        text-align: center;
+        text-align: left;
+        left: 12px;
     }
     .imageboxd{
         transform: scale(0.5, 0.5);
     }
+    .header2{
+        position: relative;
+        z-index: 1;
+    }
 
+}
+@media screen and (max-width: 1250px) {
+    .aboutimagetext{
+        display: none;
+    }
 }
 
 /* Full Page Declaration */
 html{
     background-color:rgb(21, 177, 99, 30%);
-    position: relative;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x:hidden;
-    height: 100%
-    overflow-y:hidden; 
+    overflow-x: hidden;
     
 }
 
 body{
-    width: 100%;
-    margin: auto;
      -webkit-font-smoothing: antialiased;
 }
 
 /* Header Style */
 header{
     top: 1px;
-    background-color: background-color:rgb(21, 177, 99);
+    background-color: rgb(21, 177, 99, 7%);
     z-index: 10;
     margin: auto;
     width:100%;
@@ -81,13 +77,13 @@ header{
 /* Nav Bar Style */
 .nav{
     z-index: inherit;
-    position: sticky;
+    position: relative;
     color: #333030;
     font-family: "Montserrat"; 
     font-size: 15px; 
     overflow: hidden;
-    background-color: background-color:rgb(21, 177, 99, 30%);
-    padding: 15px;
+    background-color: rgb(21, 177, 99, 30%);
+    padding: 1%;
     border: 1px #333030;
         border-top-color: #333030;
         border-top-style: solid;
@@ -172,8 +168,9 @@ aside{
 /* Footer */
 footer{
     font-family: Montserrat;
+    position: absolute;
     text-align: center;
-    margin:auto;
+    margin: auto;
 }
 
 .social{
@@ -184,43 +181,39 @@ footer{
 /* INDEX ONLY CSS */
 
 /* Home Image Styling */
-.imgboxd{
-    width:100%;
-    height: auto;
-    margin: auto;
-}
-.imageOne{
-    transform:translate(90px,100px);
+
+#imageOne{
    max-width:100%;
+   left: 20%;
+   top: 20%;
    height: auto;
     padding:none;
     border:none;
     box-decoration-break: none;
     box-shadow:-10px 10px rgb(30, 33, 32, 65%);
-    margin: 0 auto;
     border-radius:2px;
     
 }
-.imageTwo{
-    transform:translate(-414px,100px);
+#imageTwo{
     position: absolute;
-   max-width:100%;
+    max-width:100%;
    height: auto;
+    left: 20%;
+    top: 20%;
     padding:none;
     border:none;
     box-decoration-break: none;
     box-shadow:-10px 10px rgb(30, 33, 32, 65%);
-    margin: 0 auto;
     border-radius:2px;
     opacity: 0;
 }
 
 /* Home Image Hover Properties */
-.imageOne:hover{
+#imageOne:hover{
     opacity: 0;
 }
 
-.imageTwo:hover{
+#imageTwo:hover{
     opacity:100;
 }
 /* Text related to the Home Image */
@@ -253,11 +246,10 @@ footer{
     max-height: 100%;
     font-family: MontBold; 
     font-size: 15px; 
-    font-style:normal;
-    position: relative;
+    font-style: normal;
+    position: absolute;
     font-size: 72px;
     line-height: 5px;
-    color: transparent; transform:translate(370px, -160px);
     -webkit-text-stroke: 3.5px black;
     text-decoration: none;
 }
@@ -324,16 +316,14 @@ footer{
     font-size:30px;
     position:absolute;
     margin: none;
-    transform:translate(720px, -210px);
     
 }
 .hr1{
     animation: slide;
     animation-duration: 3s;
-    width: 290px;
+    width: 25%;
     border:2.2px solid black;
     border-radius: 23;
-    transform: translate(-300px, 4px);
     position: absolute
 }
 
@@ -650,6 +640,7 @@ footer{
     -webkit-text-stroke: 4px black;
     transform:translate(450px, -200px);
     text-decoration: none;
+    display: block;
     
 }
 /* About text */
